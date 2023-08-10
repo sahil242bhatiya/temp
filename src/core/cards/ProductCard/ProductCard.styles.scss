@@ -1,4 +1,21 @@
-$card-width: 350px;
+@import "src/styles/variables.styles";
+
+:root {
+  --card-width: 350px;
+}
+
+@media screen and (max-width: $lg) {
+  :root {
+    --card-width: 300px;
+  }
+}
+
+@media screen and (max-width: $xs) {
+  :root {
+    --card-width: 250px;
+  }
+}
+
 $card-bg: #f6f6f6;
 $box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.2);
 $border-rad: 16px;
@@ -29,7 +46,7 @@ $skeleton-bg: #dfdfdf;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: $card-width;
+  width: var(--card-width);
   box-shadow: $box-shadow;
   border-radius: $border-rad;
 
