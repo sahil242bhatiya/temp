@@ -1,0 +1,36 @@
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.btn.btn-primary {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10000;
+  border-radius: 16px;
+  background-color: #202020;
+  border: none;
+  padding: 20px 40px;
+  color: #fff;
+  box-shadow: 0 10px 100px 20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #303030;
+  }
+
+  &:active {
+    background-color: #101010;
+  }
+}
+
+
+.reset {
+  left: 140px !important;
+}
