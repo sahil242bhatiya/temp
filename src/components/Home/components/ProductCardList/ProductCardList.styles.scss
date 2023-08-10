@@ -7,21 +7,19 @@
 }
 
 .btn.btn-primary {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
   z-index: 10000;
+  margin: 10px;
   border-radius: 16px;
   background-color: #202020;
   border: none;
   padding: 20px 40px;
   color: #fff;
-  box-shadow: 0 10px 100px 20px rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     background-color: #303030;
+    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.2);
   }
 
   &:active {
@@ -31,4 +29,17 @@
 
 .reset {
   left: 140px !important;
+  background-color: #fff !important;
+  color: #202020 !important;
+  box-shadow: 0 0 0 2px inset rgba(0, 0, 0, 0.3) !important;
+
+  &:hover {
+    background-color: #303030 !important;
+    color: #fff !important;
+  }
+
+  &:active {
+    background-color: #101010 !important;
+    color: #fff !important;
+  }
 }
