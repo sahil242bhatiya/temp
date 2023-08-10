@@ -30,13 +30,12 @@ $skeleton-bg: #dfdfdf;
   align-items: center;
   text-align: center;
   width: $card-width;
-  overflow: hidden;
   box-shadow: $box-shadow;
   border-radius: $border-rad;
-  margin: 20px;
-  padding: 10px;
 
   .card__image {
+    padding: 10px;
+
     img {
       object-fit: cover;
       aspect-ratio: 1 / 1;

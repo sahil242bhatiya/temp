@@ -9,17 +9,12 @@ import autoAnimate from "@formkit/auto-animate";
 
 const productCardList = () => {
   const LENGTH = 10;
-  const DELAY = 1000;
 
   const [products, setProducts] = useState([]);
   const parentRef = useRef(null);
 
   const initData = () => {
-    // setProducts(generateSkeletonProducts(LENGTH));
     setProducts(generateProducts(LENGTH));
-    // setTimeout(() => {
-    //   setProducts(generateProducts(LENGTH));
-    // }, DELAY);
   };
 
   useEffect(() => {
