@@ -6,16 +6,14 @@
         transform: translateY(0px); } }
     </style>
     <g id="freepik--Floor--inject-34" class="animable" style="transform-origin: 249.05px 350.02px;">
-        <ellipse id="freepik--floor--inject-34" cx="249.05" cy="350.02" rx="235.61" ry="136.03"
-                 style="fill: rgb(240, 240, 240); transform-origin: 249.05px 350.02px;" class="animable"></ellipse>
     </g>
-    <g id="freepik--Shadow--inject-34" class="animable" style="transform-origin: 239.83px 318.325px;">
+    <g id="freepik--Shadow--inject-34" class="animable" style="transform-origin: 239.83px 318.325px; filter:blur(20px)">
         <path id="freepik--shadow--inject-34"
               d="M384.36,397.22c-15.45-8.92-15.45-23.38,0-32.3s40.5-8.92,55.95,0,15.45,23.38,0,32.3S399.81,406.14,384.36,397.22Z"
-              style="fill: rgb(224, 224, 224); transform-origin: 412.335px 381.07px;" class="animable"></path>
+              style="fill: rgb(184, 184, 184); transform-origin: 412.335px 381.07px;" class="animable"></path>
         <path id="freepik--shadow--inject-34"
               d="M70.12,398.46,29.48,375c-2.29-1.32-2.29-3.47,0-4.79L265.87,233.73a9.17,9.17,0,0,1,8.29,0l40.65,23.46c2.29,1.32,2.29,3.47,0,4.79L78.42,398.46A9.19,9.19,0,0,1,70.12,398.46Z"
-              style="fill: rgb(224, 224, 224); transform-origin: 172.145px 316.095px;" class="animable"></path>
+              style="fill: rgb(184, 184, 184); transform-origin: 172.145px 316.095px;" class="animable"></path>
     </g>
     <g id="freepik--Device--inject-34" class="animable" style="transform-origin: 184.405px 203.455px;">
         <g id="freepik--device--inject-34" class="animable" style="transform-origin: 184.405px 203.455px;">
