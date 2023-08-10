@@ -3,11 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import ProductCard from "../../../../core/cards/ProductCard/ProductCard.component.jsx";
 import "./ProductCardList.styles.scss";
 
-import {
-  addCard,
-  generateProducts,
-  generateSkeletonProducts,
-} from "./ProductCardList.functions.js";
+import { addCard, generateProducts } from "./ProductCardList.functions.js";
 
 import autoAnimate from "@formkit/auto-animate";
 
@@ -19,10 +15,11 @@ const productCardList = () => {
   const parentRef = useRef(null);
 
   const initData = () => {
-    setProducts(generateSkeletonProducts(LENGTH));
-    setTimeout(() => {
-      setProducts(generateProducts(LENGTH));
-    }, DELAY);
+    // setProducts(generateSkeletonProducts(LENGTH));
+    setProducts(generateProducts(LENGTH));
+    // setTimeout(() => {
+    //   setProducts(generateProducts(LENGTH));
+    // }, DELAY);
   };
 
   useEffect(() => {
