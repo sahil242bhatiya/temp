@@ -29,7 +29,7 @@ const productCardList = () => {
     if (parentRef.current) {
       autoAnimate(parentRef.current);
     }
-  }, [parent]);
+  }, [parentRef]);
 
   useEffect(() => {
     initData();

@@ -1,0 +1,62 @@
+.default-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 2555, 0.7);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+  z-index: 100000;
+
+  .brand__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    .brand__icon {
+    }
+
+    .brand__name {
+    }
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      color: #101010;
+      text-decoration: none;
+    }
+
+    a.btn-primary {
+      background: #202020;
+      color: #fff;
+      padding: 12px 20px;
+      margin-left: 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #505050;
+        color: #fff;
+      }
+
+      &:active {
+        background: #101010;
+        color: #fff;
+      }
+    }
+  }
+}

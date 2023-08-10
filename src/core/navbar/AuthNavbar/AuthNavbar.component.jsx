@@ -1,19 +1,8 @@
-import { useEffect, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { ReactComponent as BrandLogo } from "../../../assets/react.svg";
 
-import "./DefaultNavbar.styles.scss";
-import autoAnimate from "@formkit/auto-animate";
+import "../DefaultNavbar/DefaultNavbar.styles.scss";
 
-const defaultNavbar = () => {
-  const parentRef = useRef(null);
-
-  useEffect(() => {
-    if (parentRef.current) {
-      autoAnimate(parentRef.current);
-    }
-  }, [parentRef]);
-
+const AuthNavbar = () => {
   return (
     <>
       <nav ref={parentRef} className="default-navbar">
@@ -34,5 +23,3 @@ const defaultNavbar = () => {
     </>
   );
 };
-
-export default defaultNavbar;
