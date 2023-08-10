@@ -1,5 +1,20 @@
+import { ReactComponent as LoginArt } from "../../../assets/svg/loginArt.svg";
+import "./Login.styles.scss";
+
 const login = () => {
-  return <div>Login</div>;
+  return (
+    <div className="login-container">
+      <div className="content__container">
+        <div className="svg__container">
+          <LoginArt />
+        </div>
+        <div className="form__container">
+          <h3>Sign In With Google</h3>
+          <button className="btn btn-primary">Sign In</button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default login;

@@ -3,7 +3,7 @@ import ProductCardList from "./components/ProductCardList/ProductCardList.compon
 const home = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <h3>Home Page</h3>
       <ProductCardList />
     </>
   );

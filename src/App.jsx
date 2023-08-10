@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 // import "./debug.css";
-import "./styles/global.styles.css";
+import "./styles/global.styles.scss";
 import DefaultNavbar from "./core/navbar/DefaultNavbar/DefaultNavbar.component.jsx";
-import HomePage from "./pages/home/HomePage.jsx";
-import LoginPage from "./pages/home/LoginPage.jsx";
+import HomePage from "./pages/Home/HomePage.jsx";
+import LoginPage from "./pages/Login/LoginPage.jsx";
 
 function App() {
   return (

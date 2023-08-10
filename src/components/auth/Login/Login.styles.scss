@@ -1,0 +1,23 @@
+.login-container {
+  .content__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+
+    .svg__container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      svg {
+        height: 50vh;
+      }
+    }
+
+    .form__container {
+      text-align: center;
+    }
+  }
+}
