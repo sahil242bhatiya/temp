@@ -7,12 +7,18 @@ import autoAnimate from "@formkit/auto-animate";
 
 const defaultNavbar = () => {
   const parentRef = useRef(null);
+  const innerBodyRef = useRef(null);
 
   useEffect(() => {
     if (parentRef.current) {
       autoAnimate(parentRef.current);
     }
   }, [parentRef]);
+  useEffect(() => {
+    if (innerBodyRef.current) {
+      autoAnimate(innerBodyRef.current);
+    }
+  }, [innerBodyRef]);
 
   return (
     <>
@@ -30,7 +36,9 @@ const defaultNavbar = () => {
           </Link>
         </div>
       </nav>
-      <Outlet />
+      <div className="app-container" ref={innerBodyRef}>
+        <Outlet />
+      </div>
     </>
   );
 };
