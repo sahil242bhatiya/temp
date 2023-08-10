@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
-import ProductCard from "../../../core/cards/productCard/productCard.component.jsx";
-import "./productCardList.styles.scss";
+import ProductCard from "../../../../core/cards/ProductCard/ProductCard.component.jsx";
+import "./ProductCardList.styles.scss";
 
 import {
   addCard,
   generateProducts,
   generateSkeletonProducts,
-} from "./productCardList.functions.js";
+} from "./ProductCardList.functions.js";
 
 import autoAnimate from "@formkit/auto-animate";
 

@@ -1,4 +1,4 @@
-import ProductCardList from "./productCardList/productCardList.component";
+import ProductCardList from "./components/ProductCardList/ProductCardList.component.jsx";
 
 const home = () => {
   return (
