@@ -28,3 +28,52 @@ body {
     background-color: #101010;
   }
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.p-carousel-container {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.p-carousel-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  background: linear-gradient(
+    to right,
+    #ffffff00 -100%,
+    rgb(250, 250, 250) 10%
+  );
+  filter: blur(15px);
+  height: 150%;
+}
+
+.p-carousel-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  z-index: 1;
+  background: linear-gradient(to left, #ffffff00 -100%, rgb(250, 250, 250) 10%);
+  filter: blur(15px);
+  height: 150%;
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  z-index: 100;
+}
+
+.p-carousel-items-container {
+  padding-inline: 50px;
+}

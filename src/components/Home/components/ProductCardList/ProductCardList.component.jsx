@@ -6,9 +6,10 @@ import "./ProductCardList.styles.scss";
 import { addCard, generateProducts } from "./ProductCardList.functions.js";
 
 import autoAnimate from "@formkit/auto-animate";
+import { Carousel } from "primereact/carousel";
 
 const productCardList = () => {
-  const LENGTH = 10;
+  const LENGTH = 50;
 
   const [products, setProducts] = useState([]);
   const parentRef = useRef(null);
@@ -16,6 +17,24 @@ const productCardList = () => {
   const initData = () => {
     setProducts(generateProducts(LENGTH));
   };
+
+  const responsiveOptions = [
+    {
+      breakpoint: "1199px",
+      numVisible: 1,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "991px",
+      numVisible: 1,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "767px",
+      numVisible: 1,
+      numScroll: 1,
+    },
+  ];
 
   useEffect(() => {
     if (parentRef.current) {
@@ -45,11 +64,26 @@ const productCardList = () => {
       >
         Reset
       </button>
-      <div className="product-card-list" ref={parentRef}>
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+
+      <div>
+        <Carousel
+          value={products}
+          numScroll={1}
+          numVisible={5}
+          responsiveOptions={responsiveOptions}
+          itemTemplate={ProductCard}
+          showIndicators={false}
+          contentClassName="p-d-flex p-jc-center"
+          className="my-4"
+          indicatorsContentClassName="d-none"
+        />
       </div>
+
+      {/*<div className="row gap-4 mt-4 justify-content-around" ref={parentRef}>*/}
+      {/*  {products.map((product) => (*/}
+      {/*    <ProductCard key={product.id} product={product} />*/}
+      {/*  ))}*/}
+      {/*</div>*/}
     </>
   );
 };
